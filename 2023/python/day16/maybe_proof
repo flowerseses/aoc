@@ -1,0 +1,12 @@
+not really a proof but
+
+given the setup in day16 aoc 2023 (https://adventofcode.com/2023/day/16):
+
+assume horizontal line y=a where 0<=a<rows and two paths on that line defined by unit vectors v1=(1, 0) and v2=(-1, 0).
+if paths defined by the vectors v1 and v2 overlap at p1=(x, y), can we prove that there exists no point p such that p lies on y=a, p is part of path v1 and p is not part of path v2?
+
+assuming such a point exists demands that v2 extends past the start of v1 (or vice versa). given that a path can only start by:
+being split (in which case it has to extend to a stopping point in both directions),
+reflected (in which case the incoming path also has to be reflected in the same way) or
+by starting at an edge
+the only possible option for such point to exist is for it to be x'=(-1, y), which is outside of the defined line
